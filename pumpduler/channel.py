@@ -72,7 +72,7 @@ class Channel:
 
         Args:
             message_type (str): type of the message, see `pumpduler.constants.SeverToClientMessageTypes`
-            message_data (Any):
+            message_data (Any): message to send
 
         Returns:
             (None)
