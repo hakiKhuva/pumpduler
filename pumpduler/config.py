@@ -10,7 +10,7 @@ from datetime import timezone
 HOST: str = "127.0.0.1"
 PORT: int = 9090
 
-UNIX_SOCKET_PATH: str = None # must be an absolute path
+UNIX_SOCKET_PATH: str = None  # must be an absolute path
 
 READ_SIZE: int = 10240   # read size of the socket
 MAX_CLIENTS: int = 512    # maximum number of clients

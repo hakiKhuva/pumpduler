@@ -1,14 +1,9 @@
 import logging
-from .config import CONSOLE_LOGGING, LOG_FILE, LOG_LEVEL, TIMEZONE
-from datetime import datetime
+from .config import CONSOLE_LOGGING, LOG_FILE, LOG_LEVEL
+from .functions import log_timestamp_converter
 
 log_formatter = logging.Formatter("[%(asctime)s][%(levelname)s] %(message)s")
-def converter(timestamp: float):
-    dt = datetime.fromtimestamp(timestamp)
-    dt = dt.astimezone(tz=TIMEZONE)
-    return dt.timetuple()
-
-log_formatter.converter = converter
+log_formatter.converter = log_timestamp_converter
 
 logger = logging.getLogger(__name__)
 

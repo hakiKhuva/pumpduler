@@ -92,7 +92,7 @@ class TimeEventManager(object):
             logger.debug(f"Event:{time_event.id} is added to the time events")
             # sort the time events using execution timestamp
             self._time_events.sort(key=lambda event: event.exec_timestamp)
-            self._update_executor() # update the executor
+            self._update_executor()  # update the executor
 
     def get_event(self):
         """
