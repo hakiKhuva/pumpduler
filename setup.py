@@ -1,8 +1,8 @@
 from setuptools import setup
 
 VERSION = '0.0.1'
-DESCRIPTION = 'Receive messages on a specific time'
-LONG_DESCRIPTION = 'Receive messages on a specific time over sockets.'
+DESCRIPTION = 'Receive messages at a specific time'
+LONG_DESCRIPTION = 'Receive messages at a specific time over sockets.'
 
 setup(
     name="Pumpduler",

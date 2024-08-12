@@ -1,4 +1,4 @@
-# Pumpduler: receive messages on a specific time over sockets
+# Pumpduler: receive messages at a specific time over sockets
 
 Pumpduler provides functionality to set a message to be sent on specific time.
 
